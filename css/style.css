@@ -1,0 +1,316 @@
+
+@font-face {
+
+    font-family: "Linear";
+    src: url('../fonts/Raleway-VariableFont_wght.ttf');
+
+}
+
+@font-face {
+
+    font-family: "Linear-italic";
+    src: url('../fonts/Raleway-Italic-VariableFont_wght.ttf');
+
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 273px 1fr 130px;
+    grid-template-areas: "m"
+        "t"
+        "f";
+
+    background: rgb(0, 51, 102);
+    background-attachment: fixed;
+    background-size: 100%;
+
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.divisoria_menu {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255, 255, 255, 0.2);
+
+    grid-area: m;
+
+}
+
+.divisoria_menu .menu {
+
+    width: 100vw;
+
+    text-align: center;
+
+    list-style: none;
+
+}
+
+.divisoria_menu .menu a {
+
+    text-decoration: none;
+
+}
+
+.divisoria_menu .menu a li {
+
+    color: white;
+
+    font-family: "Linear";
+    font-size: 2rem;
+
+    border-bottom: 1px white solid;
+
+    padding: 1rem 0;
+
+}
+
+.divisoria_menu .menu a .menu-no-sidebar {
+
+    border: none;
+
+}
+
+.divisoria_menu .menu a li:hover {
+
+    background: rgba(255, 255, 255, 0.5);
+    color: black;
+
+}
+
+.titulo {
+
+    color: white;
+
+    text-align: center;
+
+    width: 300px;
+
+    margin: auto;
+    padding: 2rem;
+
+    grid-area: t;
+
+    background: rgba(0, 0, 0, 0.5);
+
+}
+
+.titulo .h1-titulo {
+
+    font-family: "Linear";
+    font-size: 4rem;
+
+}
+
+.titulo .h2-titulo {
+
+    font-family: "Linear-italic";
+    font-size: 2rem;
+    font-weight: 500;
+
+}
+
+footer {
+
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+
+    font-family: "Linear";
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    text-align: center;
+
+    padding: 1rem;
+
+    grid-area: f;
+
+}
+
+footer .social-media {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 300px;
+
+    margin: 1rem auto 0 auto;
+
+}
+
+footer .social-media a {
+
+    text-decoration: none;
+
+}
+
+footer .social-media a .fab {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2.5rem;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 10%;
+
+    transition: color 0.3s;
+
+}
+
+footer .social-media a .fa-facebook-f {
+
+    background: white;
+    color: #003366;
+
+    border: 1px solid #003366;
+
+}
+
+footer .social-media a .fa-twitter {
+
+    background: white;
+    color: #00ACEE;
+
+    border: 1px solid #00ACEE;
+
+}
+
+footer .social-media a .fa-instagram {
+
+    background: white;
+    color: #8134AF;
+
+    border: 1px solid #515BD4;
+
+}
+
+footer .social-media a .fa-github {
+
+    background: white;
+    color: black;
+
+}
+
+footer .social-media a .fa-facebook-f:hover {
+
+    background: #003366;
+    color: white;
+
+}
+
+footer .social-media a .fa-twitter:hover {
+
+    background: #00ACEE;
+    color: white;
+
+}
+
+footer .social-media a .fa-instagram:hover {
+
+    background: linear-gradient(to bottom left, #515BD4, #8134AF, #DD2A7B, #FEDA77 90%, #F58529 100%);
+    color: white;
+
+}
+
+footer .social-media a .fa-github:hover {
+
+    background: black;
+    color: white;
+
+}
+
+@media (max-width: 550px) {
+
+    footer .social-media a .fab {
+
+        font-size: 2rem;
+
+        width: 40px;
+        height: 40px;
+
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    body {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 123px 1fr 130px;
+
+    }
+
+    .titulo {
+
+        color: white;
+
+        text-align: center;
+
+        width: 400px;
+
+        margin: auto;
+        padding: 2rem;
+
+        grid-area: t;
+
+        background: rgba(0, 0, 0, 0.5);
+
+    }
+
+    .titulo .h1-titulo {
+
+        font-family: "Linear";
+        font-size: 5rem;
+
+    }
+
+    .titulo .h2-titulo {
+
+        font-family: "Linear-italic";
+        font-size: 3rem;
+        font-weight: 500;
+
+    }
+
+    .divisoria_menu .menu {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 1142px;
+
+    }
+
+    .divisoria_menu .menu a li {
+
+        padding: 42px 40px;
+
+        border-right: 1px rgba(255, 255, 255) solid;
+
+        border-bottom: none;
+
+    }
+
+}

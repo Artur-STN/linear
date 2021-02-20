@@ -1,0 +1,8 @@
+# linear
+
+# ATENÇÃO:
+
+- ESTE SITE PROÓSITO DE DEMOSTRAR O MEU NIVEL DE DESENVOLVIMENTO WEB
+- ESTE SITE PODE CONTER BUGS VISUAIS
+
+LINK: https://artur-stn.github.io/linear/
