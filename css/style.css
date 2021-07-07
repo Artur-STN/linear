@@ -1,14 +1,13 @@
-
 @font-face {
 
-    font-family: "Linear";
+    font-family: "Linear-font";
     src: url('../fonts/Raleway-VariableFont_wght.ttf');
 
 }
 
 @font-face {
 
-    font-family: "Linear-italic";
+    font-family: "Linear-italic-font";
     src: url('../fonts/Raleway-Italic-VariableFont_wght.ttf');
 
 }
@@ -18,298 +17,337 @@
     margin: 0;
     padding: 0;
 
-}
+    box-sizing: border-box;
 
-body {
-
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 273px 1fr 130px;
-    grid-template-areas: "m"
-        "t"
-        "f";
-
-    background: rgb(0, 51, 102);
-    background-attachment: fixed;
-    background-size: 100%;
-
-    width: 100vw;
-    height: 100vh;
-
-}
-
-.divisoria_menu {
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background: rgba(255, 255, 255, 0.2);
-
-    grid-area: m;
-
-}
-
-.divisoria_menu .menu {
-
-    width: 100vw;
-
-    text-align: center;
+    text-decoration: none;
 
     list-style: none;
 
 }
 
-.divisoria_menu .menu a {
+body {
 
-    text-decoration: none;
+    background: url('../images/background.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
 
-}
-
-.divisoria_menu .menu a li {
-
-    color: white;
-
-    font-family: "Linear";
-    font-size: 2rem;
-
-    border-bottom: 1px white solid;
-
-    padding: 1rem 0;
+    min-height: 100vh;
 
 }
 
-.divisoria_menu .menu a .menu-no-sidebar {
-
-    border: none;
-
-}
-
-.divisoria_menu .menu a li:hover {
+header {
 
     background: rgba(255, 255, 255, 0.5);
-    color: black;
 
 }
 
-.titulo {
-
-    color: white;
-
-    text-align: center;
-
-    width: 300px;
-
-    margin: auto;
-    padding: 2rem;
-
-    grid-area: t;
-
-    background: rgba(0, 0, 0, 0.5);
-
-}
-
-.titulo .h1-titulo {
-
-    font-family: "Linear";
-    font-size: 4rem;
-
-}
-
-.titulo .h2-titulo {
-
-    font-family: "Linear-italic";
-    font-size: 2rem;
-    font-weight: 500;
-
-}
-
-footer {
-
-    background: rgba(255, 255, 255, 0.3);
-    color: white;
-
-    font-family: "Linear";
-    font-size: 1.5rem;
-    font-weight: 500;
-
-    text-align: center;
-
-    padding: 1rem;
-
-    grid-area: f;
-
-}
-
-footer .social-media {
+header nav ul {
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
+    width: 1000px;
+
+    margin: 0 auto;
+
+}
+
+header nav ul a li {
+
+    color: white;
+
+    font-family: "Linear-font";
+    font-size: 2rem;
+    font-weight: bolder;
+
+    text-align: center;
+
+    border-right: 2px solid white;
+
+    width: 250px;
+    padding: 3rem 0;
+
+    transition: 0.2s;
+
+}
+
+header nav ul a li.last-li {
+
+    border-right: none;
+
+}
+
+header nav ul a li:hover {
+
+    background: rgba(255, 255, 255, 0.9);
+    color: #40592E;
+
+    transform: scale(1.1);
+
+    box-shadow: 0 0 10px #40592E;
+
+}
+
+section.title {
+
+    background: rgba(255, 255, 255, 0.8);
+    color: #048BA8;
+
+    text-align: center;
+
+    border-radius: 5px;
+
+    text-shadow: 0 0 5px white;
+    box-shadow: 0 0 5px black;
+
+    width: 400px;
+    padding: 3rem;
+
+    margin: 7rem auto;
+
+}
+
+section.title h1.h1Title {
+
+    font-family: "Linear-font";
+    font-size: 4rem;
+
+    margin: 1rem 0;
+
+}
+
+section.title h2.h2Title {
+
+    font-family: "Linear-italic-font";
+    font-size: 1.5rem;
+
+}
+
+footer {
+
+    background: rgba(255, 255, 255, 0.2);
+
+    text-align: center;
+
+    width: 100vw;
+
+    padding: 3rem;
+
+    position: fixed;
+    bottom: 0;
+
+}
+
+footer p {
+
+    font-family: "Linear-italic-font";
+    font-size: 1.5rem;
+
+    text-shadow: 0 0 5px white;
+
+    margin-bottom: 1rem;
+
+}
+
+footer div.socialMedia {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 0 0 5px black;
+
+    border-radius: 15px;
+
     width: 300px;
 
-    margin: 1rem auto 0 auto;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
 
 }
 
-footer .social-media a {
-
-    text-decoration: none;
-
-}
-
-footer .social-media a .fab {
+footer div.socialMedia .fab {
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    font-size: 2.5rem;
+    background: rgba(255, 255, 255, 0.4);
+    color: #048BA8;
 
-    width: 50px;
-    height: 50px;
+    border-radius: 10px;
 
-    border-radius: 10%;
+    font-size: 2rem;
 
-    transition: color 0.3s;
+    box-shadow: 0 0 5px white;
 
-}
+    width: 40px;
+    height: 40px;
 
-footer .social-media a .fa-facebook-f {
-
-    background: white;
-    color: #003366;
-
-    border: 1px solid #003366;
+    transition: 0.5s;
 
 }
 
-footer .social-media a .fa-twitter {
-
-    background: white;
-    color: #00ACEE;
-
-    border: 1px solid #00ACEE;
-
-}
-
-footer .social-media a .fa-instagram {
-
-    background: white;
-    color: #8134AF;
-
-    border: 1px solid #515BD4;
-
-}
-
-footer .social-media a .fa-github {
-
-    background: white;
-    color: black;
-
-}
-
-footer .social-media a .fa-facebook-f:hover {
-
-    background: #003366;
+footer div.socialMedia .fab:hover {
+    
     color: white;
 
+    border-radius: 50%;
+
+    transform: scale(1.2) rotate(720deg);
+
 }
 
-footer .social-media a .fa-twitter:hover {
+footer div.socialMedia .fa-facebook-f:hover {
+
+    background: #1877F2;
+    box-shadow: 0 0 5px #1877F2;
+
+}
+
+footer div.socialMedia .fa-twitter:hover {
 
     background: #00ACEE;
-    color: white;
+    box-shadow: 0 0 5px #00ACEE;
 
 }
 
-footer .social-media a .fa-instagram:hover {
+footer div.socialMedia .fa-instagram:hover {
 
     background: linear-gradient(to bottom left, #515BD4, #8134AF, #DD2A7B, #FEDA77 90%, #F58529 100%);
-    color: white;
+    box-shadow: 0 0 10px #515BD4;
 
 }
 
-footer .social-media a .fa-github:hover {
+footer div.socialMedia .fa-github:hover {
 
     background: black;
+    box-shadow: 0 0 5px black;
+
+}
+
+#inputCheckbox {
+
+    display: none;
+
+}
+
+label {
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255, 255, 255, 0.4);
+    color: #048BA8;
+
+    border-radius: 10px;
+
+    font-size: 2rem;
+
+    text-shadow: 0 0 15px black;
+    box-shadow: 0 0 5px white;
+
+    width: 40px;
+    height: 40px;
+
+    margin: 0 auto;
+
+    transition: 0.2s;
+
+    cursor: pointer;
+
+}
+
+label:hover {
+
+    background: #048BA8;
     color: white;
 
-}
-
-@media (max-width: 550px) {
-
-    footer .social-media a .fab {
-
-        font-size: 2rem;
-
-        width: 40px;
-        height: 40px;
-
-    }
+    transform: scale(1.2);
 
 }
 
-@media (min-width: 1200px) {
+@media(max-width: 1080px) {
 
-    body {
+    html {
 
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 123px 1fr 130px;
+        font-size: 90%;
 
     }
 
-    .titulo {
-
-        color: white;
-
-        text-align: center;
-
-        width: 400px;
-
-        margin: auto;
-        padding: 2rem;
-
-        grid-area: t;
-
-        background: rgba(0, 0, 0, 0.5);
-
-    }
-
-    .titulo .h1-titulo {
-
-        font-family: "Linear";
-        font-size: 5rem;
-
-    }
-
-    .titulo .h2-titulo {
-
-        font-family: "Linear-italic";
-        font-size: 3rem;
-        font-weight: 500;
-
-    }
-
-    .divisoria_menu .menu {
+    label {
 
         display: flex;
-        align-items: center;
-        justify-content: center;
-
-        width: 1142px;
 
     }
 
-    .divisoria_menu .menu a li {
+    #inputCheckbox:checked ~ nav {
 
-        padding: 42px 40px;
+        left: 0;
 
-        border-right: 1px rgba(255, 255, 255) solid;
+    }
 
-        border-bottom: none;
+    header {
+
+        padding: 1rem 0;
+
+    }
+    
+    header nav {
+
+        position: fixed;
+        top: 69px;
+        left: -100vw;
+
+        transition: 0.5s;
+
+    }
+    
+    header nav ul {
+
+        background: white;
+        
+        flex-direction: column;
+
+        width: 100vw;
+
+    }
+
+    header nav ul a li {
+
+        color: black;
+        
+        font-size: 2rem;
+        
+        border-bottom: 1px solid #40592E;
+
+        width: 100vw;
+
+        padding: 1rem 0;
+
+    }
+
+}
+
+@media(max-width: 520px) {
+
+    section.title {
+
+        border-radius: 0;
+
+        width: 100vw;
+
+    }
+
+    footer div.socialMedia {
+
+        /* border-radius: 0; */
+
+        width: 100%;
+
+        margin: none;
 
     }
 
