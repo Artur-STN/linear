@@ -242,15 +242,15 @@ label {
     background: rgba(255, 255, 255, 0.4);
     color: #048BA8;
 
-    border-radius: 10px;
+    border-radius: 2px;
 
     font-size: 2rem;
 
-    text-shadow: 0 0 15px black;
+    text-shadow: 0 0 15px white;
     box-shadow: 0 0 5px white;
 
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
 
     margin: 0 auto;
 
@@ -262,7 +262,7 @@ label {
 
 label:hover {
 
-    background: #048BA8;
+    background: rgba(4, 138, 168, 0.719);
     color: white;
 
     transform: scale(1.2);
@@ -342,8 +342,6 @@ label:hover {
     }
 
     footer div.socialMedia {
-
-        /* border-radius: 0; */
 
         width: 100%;
 
